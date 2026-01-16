@@ -43,12 +43,12 @@ export function ContactSection() {
     try {
       await emailjs.send(
         "landing_page_service",
-        "template_hn4svbg",
+        "template_f4qaeac",
         {
+          to_email: email,
           from_name: formData.name,
           from_email: formData.email,
-          message: formData.message,
-          to_email: email
+          message: formData.message
         }
       )
 
