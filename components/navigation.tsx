@@ -3,9 +3,16 @@
 import { useState } from "react"
 import { Menu, X, Github, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { scrollToHash } from "@/lib/utils"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault()
+    scrollToHash(sectionId)
+    setIsOpen(false)
+  }
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#101622]/80 backdrop-blur-md border-b border-[#1f2a3f]">
@@ -18,13 +25,25 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#projects" className="text-slate-400 hover:text-white transition-colors text-sm">
+            <a 
+              href="#projects" 
+              onClick={(e) => handleNavClick(e, 'projects')}
+              className="text-slate-400 hover:text-white transition-colors text-sm cursor-pointer"
+            >
               Projects
             </a>
-            <a href="#stack" className="text-slate-400 hover:text-white transition-colors text-sm">
+            <a 
+              href="#stack" 
+              onClick={(e) => handleNavClick(e, 'stack')}
+              className="text-slate-400 hover:text-white transition-colors text-sm cursor-pointer"
+            >
               Stack
             </a>
-            <a href="#contact" className="text-slate-400 hover:text-white transition-colors text-sm">
+            <a 
+              href="#contact" 
+              onClick={(e) => handleNavClick(e, 'contact')}
+              className="text-slate-400 hover:text-white transition-colors text-sm cursor-pointer"
+            >
               Contact
             </a>
           </div>
@@ -58,13 +77,25 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-[#1f2a3f]">
             <div className="flex flex-col gap-4">
-              <a href="#projects" className="text-slate-400 hover:text-white transition-colors text-sm">
+              <a 
+                href="#projects" 
+                onClick={(e) => handleNavClick(e, 'projects')}
+                className="text-slate-400 hover:text-white transition-colors text-sm cursor-pointer"
+              >
                 Projects
               </a>
-              <a href="#stack" className="text-slate-400 hover:text-white transition-colors text-sm">
+              <a 
+                href="#stack" 
+                onClick={(e) => handleNavClick(e, 'stack')}
+                className="text-slate-400 hover:text-white transition-colors text-sm cursor-pointer"
+              >
                 Stack
               </a>
-              <a href="#contact" className="text-slate-400 hover:text-white transition-colors text-sm">
+              <a 
+                href="#contact" 
+                onClick={(e) => handleNavClick(e, 'contact')}
+                className="text-slate-400 hover:text-white transition-colors text-sm cursor-pointer"
+              >
                 Contact
               </a>
               <div className="flex gap-3 pt-2">
