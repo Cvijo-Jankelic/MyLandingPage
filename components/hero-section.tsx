@@ -9,7 +9,7 @@ export function HeroSection() {
           {/* Left Content */}
           <div className="max-w-2xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight text-balance">
-              Java / Test Developer 
+              Java Developer 
             </h1>
             <p className="text-lg sm:text-xl text-slate-400 mb-8 leading-relaxed">
               Secure desktop & backend systems: auth, crypto, DB, concurrency.
@@ -39,13 +39,19 @@ export function HeroSection() {
             {/* Highlight Chips */}
             <div className="flex flex-wrap gap-3">
               <span className="px-4 py-2 bg-[#161f2e]/80 border border-[#1f2a3f] rounded-lg text-sm text-slate-300">
-                JavaFX Desktop UI
+                Java Spring Applications
+              </span>
+               <span className="px-4 py-2 bg-[#161f2e]/80 border border-[#1f2a3f] rounded-lg text-sm text-slate-300">
+                Docker & Kubernetes
               </span>
               <span className="px-4 py-2 bg-[#161f2e]/80 border border-[#1f2a3f] rounded-lg text-sm text-slate-300">
-                Secure Auth (PBKDF2/BCrypt)
+                CI/CD & DevOps
               </span>
               <span className="px-4 py-2 bg-[#161f2e]/80 border border-[#1f2a3f] rounded-lg text-sm text-slate-300">
                 Clean Architecture (Service/Repository)
+              </span>
+              <span className="px-4 py-2 bg-[#161f2e]/80 border border-[#1f2a3f] rounded-lg text-sm text-slate-300">
+                FullStack Development
               </span>
             </div>
           </div>
