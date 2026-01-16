@@ -9,7 +9,7 @@ export function HeroSection() {
           {/* Left Content */}
           <div className="max-w-2xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight text-balance">
-              Java / JavaFX Developer
+              Java / Web Developer
             </h1>
             <p className="text-lg sm:text-xl text-slate-400 mb-8 leading-relaxed">
               Secure desktop & backend systems: auth, crypto, DB, concurrency.
