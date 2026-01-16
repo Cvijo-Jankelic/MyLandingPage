@@ -9,7 +9,6 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Cvijo Jankelić — Java / JavaFX Developer",
   description: "Secure desktop & backend systems: auth, crypto, DB, concurrency. Building CyberShield IDS and more.",
-  generator: "v0.app",
   icons: {
     icon: [
       {

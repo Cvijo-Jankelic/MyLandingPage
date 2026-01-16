@@ -50,7 +50,7 @@ export function ProjectSection() {
               {/* Buttons */}
               <div className="flex flex-wrap gap-3">
                 <Button className="bg-[#135bec] hover:bg-[#135bec]/90 text-white rounded-xl" asChild>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Cvijo-Jankelic/MyLandingPage" target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 h-4 mr-2" />
                     View on GitHub
                   </a>

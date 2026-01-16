@@ -26,6 +26,13 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <a 
+              href="#about" 
+              onClick={(e) => handleNavClick(e, 'about')}
+              className="text-slate-400 hover:text-white transition-colors text-sm cursor-pointer"
+            >
+              About
+            </a>
+            <a 
               href="#projects" 
               onClick={(e) => handleNavClick(e, 'projects')}
               className="text-slate-400 hover:text-white transition-colors text-sm cursor-pointer"
@@ -56,7 +63,7 @@ export function Navigation() {
               className="border-[#1f2a3f] bg-transparent text-slate-300 hover:bg-[#1f2a3f] hover:text-white"
               asChild
             >
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Cvijo-Jankelic" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 GitHub
               </a>
@@ -77,6 +84,13 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-[#1f2a3f]">
             <div className="flex flex-col gap-4">
+              <a 
+                href="#about" 
+                onClick={(e) => handleNavClick(e, 'about')}
+                className="text-slate-400 hover:text-white transition-colors text-sm cursor-pointer"
+              >
+                About
+              </a>
               <a 
                 href="#projects" 
                 onClick={(e) => handleNavClick(e, 'projects')}
@@ -105,7 +119,7 @@ export function Navigation() {
                   className="border-[#1f2a3f] bg-transparent text-slate-300 hover:bg-[#1f2a3f] hover:text-white flex-1"
                   asChild
                 >
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Cvijo-Jankelic" target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 h-4 mr-2" />
                     GitHub
                   </a>

@@ -4,7 +4,7 @@ const stacks = [
   {
     icon: Server,
     title: "Backend",
-    description: "Java 17+, JDBC, MySQL/Postgres",
+    description: "Java 17+, JDBC, Spring Boot, REST APIs, JUnit, Docker, CI/CD",
   },
   {
     icon: Monitor,
@@ -14,12 +14,12 @@ const stacks = [
   {
     icon: ShieldCheck,
     title: "Security",
-    description: "PBKDF2/BCrypt, input validation, auth flows",
+    description: "PBKDF2/BCrypt, Spring Security, auth flows, JWT,",
   },
   {
     icon: Wrench,
     title: "Dev Practices",
-    description: "Maven, logging, clean layering",
+    description: "Maven, logging, clean layering, SOLID principles, design patterns",
   },
 ]
 
