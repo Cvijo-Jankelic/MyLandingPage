@@ -8,7 +8,7 @@ import { Mail, Github, Linkedin, Copy, Check } from "lucide-react"
 
 export function ContactSection() {
   const [copied, setCopied] = useState(false)
-  const email = "cvijo@example.com"
+  const email = "c.jankelic@gmail.com"
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email)
@@ -45,7 +45,7 @@ export function ContactSection() {
 
               {/* GitHub */}
               <a
-                href="https://github.com"
+                href="https://github.com/Cvijo-Jankelic"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 bg-[#101622] rounded-xl border border-[#1f2a3f] hover:border-[#135bec]/50 transition-colors"
@@ -56,7 +56,7 @@ export function ContactSection() {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/cvijo-jankeli%C4%87-a770b9150/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 bg-[#101622] rounded-xl border border-[#1f2a3f] hover:border-[#135bec]/50 transition-colors"
